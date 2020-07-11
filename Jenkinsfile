@@ -1,8 +1,6 @@
 pipeline {
-    agent any
-    options { 
-	skipDefaultCheckout() 
-    }
+    agent none
+   
 
     stages {
         stage('Build') {
