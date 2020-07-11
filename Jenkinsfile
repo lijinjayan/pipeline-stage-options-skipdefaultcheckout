@@ -1,12 +1,17 @@
 pipeline {
     agent any
-   
+    
     stages {
         stage('Build') {
 			agent any
-			  steps {                
+			options { 
+				skipDefaultCheckout() 
+			}
+
+            steps {                
                 echo 'Hello World'
             }
         }
     }
 }
+© 2020 GitHub, Inc.
